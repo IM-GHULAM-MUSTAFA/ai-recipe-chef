@@ -1,0 +1,714 @@
+/* Ingredients Section */
+
+.ingredientSection {
+    margin-left: 40px;
+    margin-top: 24px;
+}
+
+.ingredients>li {
+    margin-left: 50px;
+}
+
+.alert-mess{
+    text-align: center;
+    margin-top: 12px;
+    color: #d52626;
+    width: 90%;
+}
+
+
+
+main {
+    padding: 30px 30px;
+}
+
+.add-ingredient-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    height: 38px;
+}
+
+.add-ingredient-form>input {
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.add-ingredient-form>button {
+    font-family: Inter, sans-serif;
+    border-radius: 6px;
+    border: none;
+    background-color: #141413;
+    color: #FAFAF8;
+    width: 150px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.add-ingredient-form>button::before {
+    content: "+";
+    margin-right: 5px;
+}
+
+ul.ingredients-list {
+    margin-bottom: 48px;
+    margin-top: 14px;
+    margin-left: 42px;
+}
+
+ul.ingredients-list>li {
+    color: #475467;
+    line-height: 28px;
+}
+
+.get-recipe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #F0EFEB;
+    padding: 10px 28px;
+}
+
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.get-recipe-container p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+
+.get-recipe-container button {
+    border: none;
+    border-radius: 6px;
+    background: #f24747;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FAFAF8;
+    padding: 9px 17px;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+    width: 16%;
+    height: 45px;
+}
+
+.get-recipe-container button:hover {
+    background-color: #d52626;
+}
+
+.get-recipe-container button:active {
+    border: 3px solid #333;
+}
+
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
+    margin-bottom: 8px;
+    margin-left: 40px;
+}
+
+.suggested-recipe {
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.logoText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.logoText h1 {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+}
+
+
+.logoText img {
+    height: 70px;
+    margin-right: 11px;
+}
+
+.divLinks {
+    margin-left: 7rem;
+}
+
+.links:hover {
+    color: #ff6b6b;
+}
+
+.linksActive {
+    color: black;
+}
+
+/* Home page styles  */
+
+.home-img-container {
+    box-sizing: border-box;
+    width: 90%;
+    height: 400px;
+    background-image: url(./Images/kitchen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin: 24px auto;
+}
+
+.home-info {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.home-info h1 {
+    margin-bottom: 14px;
+}
+
+.home-info p {
+    margin: 12px 0;
+}
+
+.boldletter {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.home-info ul {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+
+/* FAQ Styles  */
+
+section.faq-para {
+    margin-top: 20px;
+    padding: 24px;
+    background-color: #f0efeb;
+    height: 160px;
+}
+
+.faq-para>p {
+    margin-top: 12px;
+    /* padding: 12px; */
+    text-align: justify;
+}
+
+.faq-para>h2 {
+    font-size: 30px;
+}
+
+.faq-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 55px 0px;
+}
+
+.qs-ans {
+    /* background-color: #333; */
+    background-color: #f0efeb;
+    width: 50vw;
+    margin-left: 12px;
+    margin-top: 12px;
+    padding: 12px;
+    /* color: white; */
+    /* color: #333; */
+    color: black;
+    border: none;
+    border-radius: 3px;
+}
+
+.ques-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ar-icon>img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.question {
+    padding: 8px;
+}
+
+.answer {
+    text-align: justify;
+    margin-top: 10px;
+    /* background-color: #f0efeb; */
+    border-radius: 3px;
+    padding: 12px;
+    color: black;
+    border: 2px solid #333;
+}
+
+
+/* Review section styles  */
+
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0efeb;
+    flex-direction: column;
+    margin-top: 36px;
+    gap: 16px;
+}
+
+.review-container>h2 {
+    margin-top: 24px;
+}
+
+.color-text {
+    color: #ff6b6b;
+    font-style: italic;
+}
+
+.review-list {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    padding: 20px;
+    gap: 12px; */
+    /* background: #f9f9f9; */
+    /* border-radius: 8px; */
+    width: 70vw;
+    margin-top: 30px;
+    height: 50vh;
+}
+
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
+    /* width: 450px; */
+    /* #f0efeb */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px;
+    margin: 0 5px;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.user-status {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.stars {
+    color: gold;
+    font-size: 20px;
+}
+
+.filled-star {
+    color: gold;
+}
+
+.empty-star {
+    color: lightgray;
+}
+
+.review-text {
+    font-style: italic;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.review-date {
+    font-size: 0.8rem;
+    color: gray;
+    text-align: right;
+}
+
+
+.reviewForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    justify-content: center;
+    margin: 20px 100px;
+}
+
+.form-field {
+    /* width: 250px; */
+    /* height: 30px; */
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#name {
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    height: 22px;
+}
+
+.f-m {
+    margin: 8px 12px;
+}
+
+
+.reviewForm>label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 14px;
+}
+
+form>button {
+    background-color: #f24747;
+    font-size: 19px;
+    width: 35%;
+    height: 40px;
+    align-self: center;
+}
+
+form>button:active {
+    border: 3px solid #333;
+}
+
+form>button:hover {
+    background-color: #d52626;
+}
+
+.getReview {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.getReview-text {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.review-h2 {
+    padding-left: 16px;
+    font-size: 30px;
+}
+
+.getReview-text>p {
+    padding-left: 18px;
+    margin-top: 12px;
+    text-align: justify;
+}
+
+.review-textarea {
+    resize: none;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.getReview-form {
+    width: 50%;
+}
+
+
+/* SingUp page  */
+
+.sign-Container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #6B7280; */
+    height: 100vh;
+}
+
+.sign-form {
+    width: 50%;
+    height: 100%;
+    background-color: #ff6b6b;
+    border-radius: 15px 0 0 15px;
+}
+
+.registration-title {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.registration-title>h2 {
+    font-size: 26px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.registration-title>p {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+}
+
+.sign-form #registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* height: 100%; */
+}
+
+#registration .user-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-Container #registration>input {
+    width: 35%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.sign-Container #registration>input {
+    width: 35%;
+    padding: 7px;
+}
+
+.sign-img {
+    width: 50%;
+    height: 100%;
+}
+
+.sign-img>img {
+    border-radius: 0 15px 15px 0;
+}
+
+.sign-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer Styles  */
+
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #ff6b6b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer-section ul li {
+    margin: 5px 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6b6b;
+}
+
+.social-icons {
+    display: flex;
+    /* gap: 15px; */
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6b6b;
+}
+
+
+button {
+    background: #ff6b6b;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.footer-bottom {
+    background: #222;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    width: 5%;
+    height: 70px;
+    margin-top: 12px;
+}
+
+
+
+
+/* loading  */
+
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+
+.loading-text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.generate-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+.spinner-dots {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.spinner-dots div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #007bff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.spinner-dots div:nth-child(1) {
+    left: 8px;
+    animation: dots1 0.6s infinite;
+}
+
+.spinner-dots div:nth-child(2) {
+    left: 8px;
+    animation: dots2 0.6s infinite;
+}
+
+.spinner-dots div:nth-child(3) {
+    left: 32px;
+    animation: dots2 0.6s infinite;
+}
+
+.spinner-dots div:nth-child(4) {
+    left: 56px;
+    animation: dots3 0.6s infinite;
+}
+
+@keyframes dots1 {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes dots3 {
+    0% { transform: scale(1); }
+    100% { transform: scale(0); }
+}
+
+@keyframes dots2 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(24px, 0); }
+}
