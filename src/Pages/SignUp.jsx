@@ -1,5 +1,5 @@
-import img3 from './../Images/2002.i039.010_chatbot_messenger_ai_isometric_set-15.jpg';
 
+import img3 from './../Images/2002.i039.010_chatbot_messenger_ai_isometric_set-15.jpg';
 
 import { useNavigate } from "react-router-dom";
 
@@ -17,18 +17,26 @@ export default function SignUp() {
         const lname = formData.get("lastName")
         const emial = formData.get("email")
         const password = formData.get("password")
+        const confirmpassword = formData.get("confirmpassword")
 
+
+        if(password !== confirmpassword){
+            alert("Password and Confirm Password must be same.");
+        } else{
+            formele.reset();
+            navigate('/chef');
+        }
         console.log(fname);
         console.log(lname);
         console.log(emial);
         console.log(password);
+        console.log(confirmpassword);
 
-        formele.reset();
 
-        navigate('/chef');
     }
     return (
         <>
+           
             <main className="sign-Container">
                 <section className="sign-form">
                     <div className="registration-title">
@@ -41,7 +49,8 @@ export default function SignUp() {
                             <input type="text" name="lastName" id="lastName" autoComplete="family-name" placeholder="Last Name" />
                         <input type="email" name="email" id="email" placeholder="Enter your email" required autoComplete="email"/>
                         <input type="password" name="password" id="password" autoComplete="password" placeholder="Type Password" required/>
-                        <button >Register</button>
+                        <input type="password" name="confirmpassword" id="confirmpassword" autoComplete="confirmpassword" placeholder="Confirm Password" required/>
+                        <button>Register</button>
                     </form>
                 </section>
                 <section className="sign-img">
