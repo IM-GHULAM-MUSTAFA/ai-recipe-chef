@@ -12,7 +12,7 @@ An intelligent AI-powered recipe suggestion web application that transforms your
 
 ## 🚀 Demo
 
-[Live Demo](ai-recipe-chef.netlify.app) 
+[Live Demo](https://ai-recipe-chef.netlify.app/) 
 
 ## 🛠️ Tech Stack
 
@@ -40,7 +40,7 @@ You'll need to obtain an API key from a recipe service provider. Popular options
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/IM-GHULAM-MUSTAFA/ai-recipe-chef
+   git clone https://github.com/IM-GHULAM-MUSTAFA/ai-recipe-chef.git
    cd ai-recipe-chef
    ```
 
@@ -190,9 +190,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🙏 Acknowledgments
 
-- Recipe data provided by [Your chosen Recipe API]
+- Recipe data provided by API.
 - React.js community for excellent documentation
-- Icons and images from [your source]
+- Icons and images from web.
 - Inspiration from various cooking and recipe applications
 
 ## 📞 Support
