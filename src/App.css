@@ -22,6 +22,10 @@ main {
     padding: 30px 30px;
 }
 
+.recipe-section{
+    min-height: 50vh;
+}
+
 .add-ingredient-form {
     display: flex;
     justify-content: center;

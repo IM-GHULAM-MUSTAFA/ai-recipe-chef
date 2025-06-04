@@ -55,8 +55,7 @@ export default function () {
 
             {isLoading && (
                 <div className="loading-container">
-                    <div className="spinner-dots">
-                    </div>
+                   <div className="spinner"></div>
                     <p className="loading-text">Generating your recipe...</p>
                 </div>
             )}
