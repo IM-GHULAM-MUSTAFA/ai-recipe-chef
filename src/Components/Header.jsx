@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from './../Images/chef-claude-icon.png';
 export default function () {
     return (
         <header>
             <nav className="navbar">
                 <div className='logoText'>
-                <img src="../src/Images/chef-claude-icon.png" alt="img" />
+                <img src={logo} alt="img" />
                 <h1>Recipe Chef</h1>
                 </div>
                 <div className='divLinks'>
