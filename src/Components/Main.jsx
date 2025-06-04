@@ -4,7 +4,7 @@ import IngredientsList from "./IngredientsList";
 import { getRecipeFromMistral } from './../ai.js';
 
 export default function () {
-    const [ingredient, setIngredient] = useState([]);
+    const [ingredient, setIngredient] = useState([""]);
     const [recipeShown, setRecipeShown] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const recipesection = useRef(null);
