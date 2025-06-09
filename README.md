@@ -19,7 +19,6 @@ An intelligent AI-powered recipe suggestion web application that transforms your
 - **Frontend**: React.js
 - **Styling**: Vanilla CSS
 - **API Integration**: Recipe/Food APIs for ingredient-based suggestions
-- **Deployment**: Vercel/Netlify (or your preferred hosting platform)
 
 ## 📋 Prerequisites
 
@@ -93,74 +92,8 @@ This application integrates with external recipe APIs to fetch recipe suggestion
 - TheMealDB API
 - Or your preferred recipe API
 
-### Example API Call Structure
-
-```javascript
-// services/apiService.js
-const apiKey = import.meta.env.VITE_API_KEY;
-
-export async function getRecipeFromMistral(ingredientsArr) {
-    const ingredientsString = ingredientsArr.join(", ")
-    try {
-        const response = await hf.chatCompletion({
-            model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
-            messages: [
-                { role: "system", content: SYSTEM_PROMPT },
-                { role: "user", content: `I have ${ingredientsString}. Please give me a recipe you'd recommend I make!` },
-            ],
-            max_tokens: 1024,
-        })
-        return response.choices[0].message.content
-    } catch (err) {
-        console.error(err.message)
-    }
-}
-
-export { fetchRecipesByIngredients };
-```
 
 **Note**: Make sure to add your API key to the `.env` file as described in the installation section.
-
-## 🧪 Testing
-
-Run the test suite:
-
-```bash
-# Run all tests
-npm test
-
-# Run tests in watch mode
-npm run test:watch
-
-# Run tests with coverage
-npm run test:coverage
-```
-
-## 🚀 Deployment
-
-### Using Vercel
-
-1. Push your code to GitHub
-2. Visit [Vercel](https://vercel.com/) and import your repository
-3. Add environment variables in Vercel dashboard (if using API keys)
-4. Deploy automatically
-
-### Using Netlify
-
-1. Push your code to GitHub
-2. Visit [Netlify](https://netlify.com/) and connect your repository
-3. Add environment variables in Netlify dashboard
-4. Build command: `npm run build`
-5. Publish directory: `build`
-
-### Manual Build
-
-```bash
-# Create production build
-npm run build
-
-# The build folder contains the static files ready for deployment
-```
 
 ## 📸 Screenshots
 
@@ -170,8 +103,6 @@ npm run build
 ![Recipe Page Screenshot](./src/ScreenShots/RecipePage.png "Hover text")
 ### Recipe Details
 ![Recipe Details Screenshot](./src/ScreenShots/InputResult.png "Hover text")
-### Review Page
-![Review Page Screenshot](./src/ScreenShots/ReviewPage.png "Hover text")
 
 ## 🤝 Contributing
 
@@ -205,7 +136,3 @@ If you have any questions or need help, please:
 ---
 
 **Made with ❤️ by [Ghulam Mustafa]**
-
----
-
-*Last updated: [4-June-2025]*
